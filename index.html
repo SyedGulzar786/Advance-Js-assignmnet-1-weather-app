@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather UI</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Weather App</h1>
+            <input type="text" id="location" placeholder="Enter city">
+            <button id="search-btn">Search</button>
+        </header>
+        <main>
+            <div id="weather-info">
+                <h2 id="location-name"></h2>
+                <div id="current-weather">
+                    <img id="weather-icon" src="img/weather.jpeg" alt="Weather Icon">
+                    <span id="temperature"></span>
+                    <p id="description"></p>
+                </div>
+                <div id="additional-info">
+                    <p>Wind Speed: <span id="wind-speed"></span> km/h</p>
+                    <p>Humidity: <span id="humidity"></span>%</p>
+                    <p>Feel Like: <span id="feel"></span></p>
+                    <p>Sunrise: <span id="rise"></span></p>
+                    <p>Sunset: <span id="set"></span></p>
+                </div>
+                <div id="forecast">
+                    <h3>Daily Forecast</h3>
+                    <ul id="daily-forecast"></ul>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; 2024 Weather App</p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>
